@@ -1,11 +1,17 @@
+* {
+    overflow-x: hidden;
+}
+
 .background-slider {
-    background-image: url(./images/24_SUNSET_VIEW_-_FROM_SUNSET_BEACH.jpg.1366x768_q85_crop_upscale.webp);
+    /* background-image: url(./images/24_SUNSET_VIEW_-_FROM_SUNSET_BEACH.jpg.1366x768_q85_crop_upscale.webp); */
     height: 80vh;
-    width: 80%;
+    width: 90%;
     transition: background-image 0.5s ease-in-out;
     background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat;
+    /* background-position: center; */
     margin: auto;
+    overflow: hidden;
   }
 
 .boxes {
@@ -18,7 +24,7 @@
     height: 50px;
     width: 30%;
     padding: 10px;
-    margin-top: -20%;
+
 }
 
 .left-box p {
@@ -30,92 +36,14 @@
     height: 50px;
     width: 6%;
     padding: 10px;
-    margin-top: -20%;
     margin-left: auto;
 }
-
-/* .card {
-    background-color: #061C2C;
-    color: #ffffff;
-    width: 350px;
-    margin: 10px;
-    padding: 10px;
-}
-
-.card h3 {
-    padding: 5px;
-}
-
-.card img {
-    height: 60px;
-}
-
-.cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-.card-2 {
-    background-color: #244AC2;
-    color: #ffffff;
-    display: flex;
-    flex-direction: row;
-    width: 45%;
-    margin: 10px;
-    padding: 10px;
-    font-size: 12px;
-}
-
-.card-2 img {
-    height: 20px;
-    margin-left: auto;
-}
-
-.columns {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-.text {
-    width: 50%;
-    font-size: 20px;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-.icons {
-    margin: 20px;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-@media (max-width: 768px) {
-    .columns {
-        flex-direction: column;
-    }
-} */
-
-
 
 
 .card {
     background-color: #061C2C;
     color: #ffffff;
-    width: 350px;
+    width: 418px;
     margin: 10px;
     padding: 10px;
 }
@@ -128,23 +56,22 @@ img {
     height: 60px;
 }
 
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
+.cards,
 .cards-2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 0;
 }
 
+
 .card-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
     background-color: #244AC2;
     color: #ffffff;
-    width: 39.5%;
+    width: 41%;
     margin: 10px;
     padding: 10px;
     font-size: 12px;
@@ -160,43 +87,49 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    padding: 0;
+    padding: 10px;
     margin: 0;
 }
 
 .text {
-    width: 50%;
+    width: 70%;
     font-size: 20px;
-    padding: 10px;
+    padding-right: 40px;
     box-sizing: border-box;
 }
 
 .icons {
-    margin: 20px;
+    /* margin: 20px; */
     padding: 10px;
     box-sizing: border-box;
 }
 
-img {
+.icons img {
     max-width: 100%;
     height: auto;
 }
 
 @media (max-width: 768px) {
-    .columns {
+    .columns,
+    .inside {
         flex-direction: column;
+        margin: 0px;
     }
 
-    .cards,
+    .card {
+        width: 87%;
+    }
+
     .cards-2 {
-        padding: 0;
-    }
-
-    .card,
-    .card-2 {
         width: 100%;
         padding: 0;
     }
+
+    .card-2 {
+        width: 100%;
+        
+    }
+
 
     .text {
         width: 100%;
@@ -208,7 +141,10 @@ img {
 
     .icons {
         width: 100%;
-        padding: 10px;
+    }
+
+    .icons img {
+        width: 100%;
     }
 
 }
