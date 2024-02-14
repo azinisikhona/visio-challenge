@@ -1,19 +1,19 @@
-* {
-    overflow-x: hidden;
-}
-
-.background-slider {
-    /* background-image: url(./images/24_SUNSET_VIEW_-_FROM_SUNSET_BEACH.jpg.1366x768_q85_crop_upscale.webp); */
-    height: 80vh;
-    width: 90%;
-    transition: background-image 0.5s ease-in-out;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* background-position: center; */
+.carousel-container {
+    width: 80%;
     margin: auto;
     overflow: hidden;
   }
 
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .carousel img {
+    max-width: 100%;
+    object-fit: cover;
+  }
+  
 .boxes {
     display: flex;
 }
