@@ -285,6 +285,7 @@
         padding: 10px;
         margin-left: auto;
     }
+
 }
 
 @media (max-width: 768px) {
@@ -292,20 +293,6 @@
     .inside {
         flex-direction: column;
         margin: 0px;
-    }
-
-    .card {
-        width: 87%;
-    }
-
-    .cards-2 {
-        width: 100%;
-        padding: 0;
-    }
-
-    .card-2 {
-        width: 100%;
-        
     }
 
 
