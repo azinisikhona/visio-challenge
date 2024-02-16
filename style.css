@@ -46,7 +46,7 @@
 }
 
 .carousel-container {
-    width: 80%;
+    width: 78%;
     margin: auto;
     overflow: hidden;
   }
@@ -62,6 +62,9 @@
   }
   
 .boxes {
+    position: absolute;
+    top: 60%;
+    width: 100%;
     display: flex;
 }
 
@@ -81,7 +84,7 @@
 .right-box {
     background-color: #000000;
     height: 50px;
-    width: 6%;
+    width: 10.65%;
     padding: 10px;
     margin-left: auto;
 }
@@ -154,6 +157,134 @@
 .icons img {
     max-width: 100%;
     height: auto;
+}
+
+@media (max-width: 1150px) {
+    .boxes {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        display: flex;
+    }
+
+    .left-box {
+        background-color: #244AC2;
+        color: #ffffff;
+        height: 50px;
+        width: 30%;
+        padding: 10px;
+    
+    }
+    
+    .left-box p {
+        margin-left: 10px;
+    }
+    
+    .right-box {
+        background-color: #000000;
+        height: 50px;
+        width: 10.65%;
+        padding: 10px;
+        margin-left: auto;
+    }
+}
+
+
+@media (max-width: 950px) {
+    .boxes {
+        position: absolute;
+        top: 40%;
+        width: 100%;
+        display: flex;
+    }
+}
+
+@media (max-width: 650px) {
+    .boxes {
+        position: absolute;
+        top: 30%;
+        width: 100%;
+        display: flex;
+    }
+
+    .left-box {
+        background-color: #244AC2;
+        color: #ffffff;
+        height: fit-content;
+        /* width: 30%; */
+        padding: 10px;
+    
+    }
+    
+    .left-box p {
+        margin-left: 0;
+    }
+    
+    .right-box {
+        background-color: #000000;
+        width: 10.65%;
+        padding: 10px;
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .boxes {
+        position: absolute;
+        top: 25%;
+        width: 100%;
+        display: flex;
+    }
+
+    .left-box {
+        background-color: #244AC2;
+        color: #ffffff;
+        height: fit-content;
+        /* width: 30%; */
+        padding: 10px;
+    
+    }
+    
+    .left-box p {
+        margin-left: 0;
+    }
+    
+    .right-box {
+        background-color: #000000;
+        width: 10.65%;
+        padding: 10px;
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .boxes {
+        position: absolute;
+        top: 25%;
+        width: 100%;
+        display: flex;
+        opacity: 0;
+    }
+
+    .left-box {
+        background-color: #244AC2;
+        color: #ffffff;
+        height: fit-content;
+        /* width: 30%; */
+        padding: 10px;
+    
+    }
+    
+    .left-box p {
+        margin-left: 0;
+    }
+    
+    .right-box {
+        background-color: #000000;
+        width: 10.65%;
+        padding: 10px;
+        margin-left: auto;
+    }
 }
 
 @media (max-width: 768px) {
