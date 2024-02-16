@@ -47,8 +47,10 @@
 
 .carousel-container {
     width: 78%;
+    /* height: 80vh; */
     margin: auto;
     overflow: hidden;
+    position: relative;
   }
 
   .carousel {
@@ -59,6 +61,28 @@
   .carousel img {
     max-width: 100%;
     object-fit: cover;
+  }
+
+  .pagination {
+    position: absolute;
+    top: 130px;
+    left: 78%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+
+  .pagination button {
+    background-color: #ccc;
+    border: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+
+  .pagination button.active {
+    background-color: #333;
   }
   
 .boxes {
@@ -238,6 +262,10 @@
 }
 
 @media (max-width: 500px) {
+    .pagination {
+        top: 17%;
+      }
+
     .boxes {
         position: absolute;
         top: 25%;
@@ -311,6 +339,10 @@
 }
 
 @media (max-width: 450px) {
+    .pagination {
+        opacity: 0;
+    }
+
     .card {
         width: 90%;
     }
