@@ -1,3 +1,50 @@
+.navbar {
+    display: flex;
+    padding: 14px 0;
+    margin: 0 7rem;
+}
+.navbar a img {
+    height: 40px;
+    margin: 5px 0;
+}
+.logo {
+    margin-right: auto;
+}
+@media screen and (max-width: 768px){
+    .navbar {
+        display: flex;
+        padding: 14px 0;
+        margin: 0 3rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding: 4px 0;
+        margin: 0 2rem;
+    }
+    .navbar a img {
+        height: 40px;
+        margin: 1px 0;
+    }
+}
+@media screen and (max-width: 481px) {
+    .navbar {
+        display: flex;
+        padding: 7px 0;
+        margin: 0 1.5rem;
+    }
+}
+@media screen and (max-width: 320px) {
+    .navbar {
+        padding: 2px 0;
+        /* margin: 0; */
+    }
+    .navbar a img {
+        height: 25px;
+        margin: 1px 0;
+    }
+}
+
 .carousel-container {
     width: 80%;
     margin: auto;
