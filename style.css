@@ -47,7 +47,7 @@
 
 .carousel-container {
     width: 78%;
-    /* height: 80vh; */
+    height: 80vh;
     margin: auto;
     overflow: hidden;
     position: relative;
@@ -65,7 +65,7 @@
 
   .pagination {
     position: absolute;
-    top: 130px;
+    top: 82vh;
     left: 78%;
     transform: translateX(-50%);
     display: flex;
@@ -262,9 +262,9 @@
 }
 
 @media (max-width: 500px) {
-    .pagination {
+    /* .pagination {
         top: 17%;
-      }
+      } */
 
     .boxes {
         position: absolute;
