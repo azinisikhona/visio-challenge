@@ -37,8 +37,8 @@
 @media screen and (max-width: 320px) {
     .navbar {
         padding: 2px 0;
-        /* margin: 0; */
     }
+
     .navbar a img {
         height: 25px;
         margin: 1px 0;
@@ -47,7 +47,6 @@
 
 .carousel-container {
     width: 78%;
-    height: 80vh;
     margin: auto;
     overflow: hidden;
     position: relative;
@@ -65,7 +64,7 @@
 
   .pagination {
     position: absolute;
-    top: 82vh;
+    top: 130px;
     left: 78%;
     transform: translateX(-50%);
     display: flex;
