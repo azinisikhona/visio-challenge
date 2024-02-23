@@ -1,6 +1,5 @@
 $(document).ready(function() {
   const carousel = $('.carousel');
-  const intervalTime = 3000;
   let currentIndex = 0;
 
   const pagination = $('.pagination');
@@ -14,27 +13,21 @@ $(document).ready(function() {
     paginationBtns.eq(currentIndex).addClass('active');
   }
 
-
-  function changeSlide() {
-    currentIndex = (currentIndex + 1) % carousel.children().length;
+  function changeSlide(delta) {
+    currentIndex = (currentIndex + delta + carousel.children().length) % carousel.children().length;
     const translateValue = -currentIndex * 100 + '%';
     carousel.css('transform', 'translateX(' + translateValue + ')');
     highlightPagination();
   }
 
-
-  const interval = setInterval(changeSlide, intervalTime);
-
-
   paginationBtns.click(function() {
-    clearInterval(interval);
-    currentIndex = $(this).index();
-    const translateValue = -currentIndex * 100 + '%';
-    carousel.css('transform', 'translateX(' + translateValue + ')');
-    highlightPagination();
-    interval = setInterval(changeSlide, intervalTime);
+    const index = $(this).index();
+    changeSlide(index - currentIndex);
   });
 
+  $('.arrow.next').click(function() {
+    changeSlide(1);
+  });
 
   highlightPagination();
 });

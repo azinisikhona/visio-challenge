@@ -21,25 +21,29 @@
     </header>
     <main>
 
-        <div class="carousel-container">
-            <div class="carousel">
-              <img src="https://i.postimg.cc/kgXwsdPR/24-SUNSET-VIEW-FROM-SUNSET-BEACH-jpg-1366x768-q85-crop-upscale.webp" alt="Image 1">
-              <img src="https://i.postimg.cc/SN4QnXKv/20160608123429-Ocean.jpg" alt="Image 2">
-              <img src="https://i.postimg.cc/W4BkHMG7/scenic-view-of-ocean-during-dawn-3.jpg" alt="Image 3">
+        <section class="slider">
+            <div class="carousel-container">
+                <div class="carousel">
+                  <img src="https://i.postimg.cc/kgXwsdPR/24-SUNSET-VIEW-FROM-SUNSET-BEACH-jpg-1366x768-q85-crop-upscale.webp" alt="Image 1">
+                  <img src="https://i.postimg.cc/SN4QnXKv/20160608123429-Ocean.jpg" alt="Image 2">
+                  <img src="https://i.postimg.cc/W4BkHMG7/scenic-view-of-ocean-during-dawn-3.jpg" alt="Image 3">
+                </div>
+                <div class="pagination"></div>
             </div>
-        </div>
-
-        <div class="pagination"></div>
-
-        <div>
+            <div>
                 <div class="boxes">
                     <div class="left-box">
                         <p><b>LOOK BEYOND THE HORIZON</b></p>
                     </div>
+                    <div class="arrow next" onclick="changeSlide(1)"></div>
                     <div class="right-box">
                         
                     </div>
                 </div>
+        </section>
+
+        <section class="main-section">
+            
            
         </div>
         <div class="columns">
@@ -53,13 +57,13 @@
             </div>
         </div>
         <div class="cards">
-           <div>
+           <div class="box">
             <div class="card">
                 <img src="https://i.postimg.cc/ZR20py4P/Screenshot-2024-01-11-094155-removebg-preview.png" alt="">
-                <h3>THE VISIO DEFFERENCE</h3>
+                <h3>THE VISIO <br> DEFFERENCE</h3>
             </div>
-            <div class="cards">
-                <div class="card-2">
+            <div class="cards-2">
+                <div class="card-1">
                     <b>HEDGE FUNDS</b>
                     <img src="https://i.postimg.cc/ZR20py4P/Screenshot-2024-01-11-094155-removebg-preview.png" alt="">
                 </div>
@@ -69,13 +73,13 @@
                 </div>
             </div>
            </div>
-           <div>
+           <div class="box">
             <div class="card">
                 <img src="https://i.postimg.cc/ZR20py4P/Screenshot-2024-01-11-094155-removebg-preview.png" alt="">
-                <h3>MEET THE VISIO TEAM</h3>
+                <h3>MEET THE <br> VISIO TEAM</h3>
             </div>
-            <div class="cards">
-                <div class="card-2">
+            <div class="cards-2">
+                <div class="card-1">
                     <b>SEGREGATED MANDATES</b>
                     <img src="https://i.postimg.cc/ZR20py4P/Screenshot-2024-01-11-094155-removebg-preview.png" alt="">
                 </div>
@@ -85,13 +89,13 @@
                 </div>
             </div>
            </div>
-           <div>
+           <div class="box">
             <div class="card">
                 <img src="https://i.postimg.cc/ZR20py4P/Screenshot-2024-01-11-094155-removebg-preview.png" alt="">
-                <h3>OUR FUNDS AND INVESTMENTS</h3>
+                <h3>OUR FUNDS AND <br> INVESTMENTS</h3>
             </div>
-            <div class="cards">
-                <div class="card-2">
+            <div class="cards-2">
+                <div class="card-1">
                     <b>FUND PERFOMANCE</b>
                     <img src="https://i.postimg.cc/ZR20py4P/Screenshot-2024-01-11-094155-removebg-preview.png" alt="">
                 </div>
@@ -102,6 +106,9 @@
             </div>
            </div>
         </div>
+        </section>
+
+       
     </main>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
