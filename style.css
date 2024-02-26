@@ -27,11 +27,17 @@
         padding: 14px 0;
         /* margin: 0 3rem; */
     }
+
+    .navbar a img {
+        height: 45px;
+        margin: 5px 0;
+    }
+    
 }
 @media screen and (max-width: 480px) {
     .navbar {
         padding: 4px 0;
-        margin: 0 2rem;
+        /* margin: 0 2rem; */
     }
     .navbar a img {
         height: 40px;
@@ -42,7 +48,7 @@
     .navbar {
         display: flex;
         padding: 7px 0;
-        margin: 0 1.5rem;
+        /* margin: 0 1.5rem; */
     }
 }
 @media screen and (max-width: 320px) {
