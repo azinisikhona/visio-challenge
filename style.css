@@ -1,12 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    font-family: Open Sans;
+}
+
 .main-section {
     overflow: hidden;
-    font: sans-serif;
 }
 
 .navbar {
     display: flex;
+    width: 76%;
     padding: 14px 0;
-    margin: 0 7rem;
+    margin: auto;
 }
 .navbar a img {
     height: 40px;
@@ -51,7 +57,7 @@
 }
 
 .carousel-container {
-    width: 78%;
+    width: 76%;
     margin: auto;
     overflow: hidden;
     position: relative;
@@ -64,6 +70,7 @@
 
   .carousel img {
     width: 100%;
+    height: 90vh;
     object-fit: cover;
   }
 
@@ -92,7 +99,7 @@
   
 .boxes {
     position: absolute;
-    top: 60%;
+    top: 53vh;
     width: 100%;
     display: flex;
 }
@@ -100,14 +107,13 @@
 .left-box {
     background-color: #244AC2;
     color: #ffffff;
-    height: 50px;
-    width: 30%;
-    padding: 10px;
-
+    width: 33%;
 }
 
 .left-box p {
     margin-left: 100px;
+    font-weight: 300;
+    font-size: 24px;
 }
 
 .arrow{
@@ -135,8 +141,8 @@
 
 
 .box {
-    width: 33.33%;
-    margin: 5px;
+    width: 31%;
+    margin: auto;
 }
 
 
@@ -160,11 +166,15 @@
     display: flex;
     width: 78%;
     margin: auto;
+    font-weight: 300;
+    font-size: 17px;
 }
 
 .cards-2 {
     display: flex;
     width: 100%;
+    font-weight: 300;
+    font-size: 14px;
     margin: 0;
     padding: 0;
 }
@@ -205,21 +215,24 @@
     display: flex;
     /* flex-wrap: wrap; */
     justify-content: center;
-    width: 78%;
-    padding: 10px;
+    width: 76%;
+    /* padding: 10px; */
     margin: auto;
 }
 
 .text {
     width: 70%;
-    font-size: 20px;
-    padding-right: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    font-size: 19px;
     box-sizing: border-box;
 }
 
 .icons {
-    /* margin: 20px; */
-    padding: 10px;
+    /* padding: 10px; */
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -231,7 +244,7 @@
 @media (max-width: 1150px) {
     .boxes {
         position: absolute;
-        top: 55%;
+        top: 45%;
         width: 100%;
         display: flex;
     }
@@ -248,14 +261,17 @@
     .left-box p {
         margin-left: 10px;
     }
-    
-    
 
+    .carousel img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
 }
 
 @media (max-width: 1020px) {
     .boxes {
-        top: 50%;
+        top: 40%;
     }
     
 }
@@ -264,14 +280,22 @@
 @media (max-width: 950px) {
     .boxes {
         position: absolute;
-        top: 45%;
+        top: 40%;
         width: 100%;
         display: flex;
+    }
+
+    .left-box p {
+        margin-left: 0;
+        font-size: 17px;
     }
 }
 
 @media (max-width: 931px) {
-    
+    .left-box p {
+        margin: 5px;
+        font-size: 15px;
+    }
 
     .card-2 {
         width: 91%;
@@ -279,7 +303,13 @@
 }
 
 @media (max-width: 831px) {
+
     .boxes {
+        top: 35%;
+    }
+
+    .left-box p {
+        margin: 5px;
         font-size: 14px;
     }
 
@@ -290,13 +320,13 @@
 
 @media (max-width: 750px) {
     .boxes {
-        top: 40%;
+        top: 30%;
     }
     
 }
 
 @media (max-width: 732px) {
-    .boxes {
+    .left-box {
         font-size: 12px;
     }
 
@@ -309,7 +339,7 @@
 @media (max-width: 650px) {
     .boxes {
         position: absolute;
-        top: 35%;
+        top: 27%;
         width: 100%;
         display: flex;
     }
@@ -329,7 +359,7 @@
 }
 
 @media (max-width: 600px) {
-    .boxes {
+    .left-box {
         font-size: 11px;
     }
     
@@ -339,7 +369,7 @@
 
     .boxes {
         position: absolute;
-        top: 30%;
+        top: 25%;
         width: 100%;
         display: flex;
     }
@@ -371,7 +401,7 @@
 @media (max-width: 500px) {
     .boxes {
         position: absolute;
-        top: 27%;
+        top: 22%;
         width: 100%;
         display: flex;
     }
@@ -399,7 +429,7 @@
 
  @media (max-width: 450px) {
     .boxes {
-        top: 25%;
+        top: 20%;
     }
 
     .left-box p {
@@ -420,7 +450,7 @@
 
 @media (max-width: 400px) {
     .boxes {
-        top: 22%;
+        top: 18%;
     }
 
     .left-box p {
@@ -431,7 +461,7 @@
 
 @media (max-width: 350px) {
     .boxes {
-        top: 20%;
+        top: 16%;
     }
 
     .left-box p {
@@ -446,7 +476,7 @@
 
 @media (max-width: 321px) {
     .boxes {
-        top: 15%;
+        top: 13%;
     }
 
     .left-box p {
@@ -469,6 +499,7 @@
         text-align: center;
         box-sizing: border-box;
         padding: 0;
+        margin-bottom: 0;
     }
 
     .text p {
@@ -533,6 +564,10 @@
 }
 
 @media (max-width: 1431px) {
+
+    .left-box p {
+        font-size: 19px;
+    }
 
     .card-1 {
         height: 20px;
