@@ -1,33 +1,33 @@
-$(document).ready(function() {
-  const carousel = $('.carousel');
-  let currentIndex = 0;
+$(document).ready(function () {
+  let currentSlide = 0;
+  const slides = $('.carousel img');
+  let dots = $('.dot');
 
-  const pagination = $('.pagination');
-  for (let i = 0; i < carousel.children().length; i++) {
-    pagination.append('<button class="pagination-btn"></button>');
-  }
-  const paginationBtns = $('.pagination-btn');
-
-  function highlightPagination() {
-    paginationBtns.removeClass('active');
-    paginationBtns.eq(currentIndex).addClass('active');
+  function showSlide(index) {
+      currentSlide = (index + slides.length) % slides.length;
+      slides.css('transform', `translateX(${-100 * currentSlide}%)`);
+      dots.removeClass('active');
+      dots.eq(currentSlide).addClass('active');
   }
 
-  function changeSlide(delta) {
-    currentIndex = (currentIndex + delta + carousel.children().length) % carousel.children().length;
-    const translateValue = -currentIndex * 100 + '%';
-    carousel.css('transform', 'translateX(' + translateValue + ')');
-    highlightPagination();
+  function changeSlide(offset) {
+      showSlide(currentSlide + offset);
   }
 
-  paginationBtns.click(function() {
-    const index = $(this).index();
-    changeSlide(index - currentIndex);
+  $('.arrow.next').on('click', function () {
+      changeSlide(1);
   });
 
-  $('.arrow.next').click(function() {
-    changeSlide(1);
+  $('.dots-container').on('click', '.dot', function () {
+      const dotIndex = $(this).index();
+      showSlide(dotIndex);
   });
 
-  highlightPagination();
+  for (let i = 0; i < slides.length; i++) {
+      $('.dots-container').append('<div class="dot"></div>');
+  }
+
+  dots = $('.dot'); 
+
+  showSlide(currentSlide);
 });
