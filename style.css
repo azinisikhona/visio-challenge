@@ -57,7 +57,7 @@
 }
 
 .carousel-container {
-    width: 76%;
+    width: 75%;
     margin: auto;
     overflow: hidden;
     position: relative;
@@ -113,7 +113,7 @@
 .left-box p {
     margin-left: 100px;
     font-weight: 300;
-    font-size: 24px;
+    /* font-size: 24px; */
 }
 
 .arrow{
@@ -215,14 +215,14 @@
     display: flex;
     /* flex-wrap: wrap; */
     justify-content: center;
-    width: 76%;
+    width: 75%;
     /* padding: 10px; */
     margin: auto;
 }
 
 .text {
     width: 70%;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 40px;
     font-weight: 300;
     font-size: 19px;
@@ -287,7 +287,6 @@
 
     .left-box p {
         margin-left: 0;
-        font-size: 17px;
     }
 }
 
@@ -326,8 +325,8 @@
 }
 
 @media (max-width: 732px) {
-    .left-box {
-        font-size: 12px;
+    .left-box p {
+        font-size: 11px;
     }
 
     .arrow{
@@ -566,7 +565,7 @@
 @media (max-width: 1431px) {
 
     .left-box p {
-        font-size: 19px;
+        /* font-size: 19px; */
     }
 
     .card-1 {
